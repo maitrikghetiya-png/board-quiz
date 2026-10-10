@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  /* Quad AI School of Technology Brand Palette (Visual Theme Approximation) */
+  --quad-charcoal-deep: #111318;
+  --quad-charcoal-dark: #191C23;
+  --quad-grey-secondary: #292D35;
+  --quad-grey-border: #3A3F4B;
+  --quad-yellow-circuit: #FFD43B;
+  --quad-yellow-circuit-hover: #F5C518;
+  --quad-yellow-circuit-active: #E6B800;
+  --quad-yellow-circuit-muted: #FFF3C4;
+  --quad-yellow-circuit-dark: #8F6B00;
+  --quad-bg-light: #F3F4F6;
+  --quad-card-bg: #FFFFFF;
+  --quad-text-primary: #111318;
+  --quad-text-secondary: #4B5563;
+  --quad-text-muted: #6B7280;
+  --quad-border-subtle: #E5E7EB;
+  --quad-success-green: #16A34A;
+  --quad-error-red: #DC2626;
+
+  /* Semantic Theme Aliases */
+  --theme-header-bg: var(--quad-charcoal-deep);
+  --theme-nav-bg: var(--quad-charcoal-deep);
+  --theme-nav-active-bg: var(--quad-yellow-circuit);
+  --theme-nav-active-text: var(--quad-charcoal-deep);
+  --theme-accent-yellow: var(--quad-yellow-circuit);
+  --theme-footer-bg: var(--quad-charcoal-deep);
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F3F4F6;
+    color: #111318;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-mono-formula {
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+}
+
+/* Custom scrollbars for question palette and explanations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
